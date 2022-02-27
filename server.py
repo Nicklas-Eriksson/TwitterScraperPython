@@ -6,6 +6,7 @@ import tweetResults
 
 HEADERSIZE = 10 # Used for prepare that reciving system on the size of the file transfer.
 
+#Starts the server, it will allways listen for connections.
 def StartServer():
     serverSocket = socket.socket()
     print("Socket created")
@@ -73,8 +74,6 @@ def Tweet(clientSocket, decodedCompressedMsg):
     print("Terminating connection to client...")
     clientSocket.close()
     print("Connection terminated!")
-
-
 
 def CompressAndSend(clientSocket, data):
     print("Compressing inputs...")

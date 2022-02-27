@@ -4,6 +4,7 @@ import scroll
 
 uniqueIdenteties = []
 
+#Scrapes the twitter posts from the page by finding the HTML element containing the tweets.
 def Data(driver, numberOfTweetsRequested):
     time.sleep(2)
 
@@ -52,7 +53,7 @@ def Data(driver, numberOfTweetsRequested):
 
     return tweetDataSet
 
-
+#Formats the tweet into a tuple containing username, handle, post and so on.
 def formateTweet(tweet):
     attempts = 0
     success = True

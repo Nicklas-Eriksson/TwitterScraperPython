@@ -62,7 +62,6 @@ def EnterPhoneNumber(driver):
     except:
         return False
 
-
 def EnterPass(driver):
     try:
         WebDriverWait(driver, 1).until(EC.element_to_be_clickable((By.XPATH, "//body/div[@id='react-root']/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[3]/div[1]/label[1]/div[1]/div[2]/div[1]/input[1]"))).send_keys(TwitterPassword)

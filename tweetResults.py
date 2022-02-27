@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver import ActionChains
 
+#This functions are called when the program is asked to tweet the results from the webpage.
 def Run(res):
     driver = login.Procedure()
 

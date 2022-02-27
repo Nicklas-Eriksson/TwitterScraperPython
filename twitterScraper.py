@@ -1,5 +1,6 @@
 import login, search, scrape, parse
 
+#This methods are called when the program is asked to scrape twitter for tweets.
 '''
     Example:
         userSearch = Running is fun

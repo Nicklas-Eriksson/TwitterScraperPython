@@ -1,5 +1,6 @@
 import time
 
+#Allows bot to scroll down on the twitter page.
 def Down(driver):
     tries = 0
     previousHeight = driver.execute_script("return document.body.scrollHeight")
@@ -17,14 +18,7 @@ def Down(driver):
             else:
                 tries += 1
                 time.sleep(2)
-            
-            # if tries > 10:
-            #     print('3 scroll attempts reached...')
-            #     return False #no more tweets to scrape
-            # else:
-            #     tries += 1
-            #     print('Scrolling... Tries: ' + str(tries+1))
-            #     time.sleep(1)
+         
         else: #Continue scrolling
             previousHeight = newHeight
             break;
